@@ -1,6 +1,6 @@
 import { Box, Button, Text, TextField, Image } from '../node_modules/@skynexui/components';
 import appConfig from '../pages/config.json';
-
+//teste
 function GlobalStyle() {
   return (
     <style global jsx>{`
