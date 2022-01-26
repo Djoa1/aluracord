@@ -26,7 +26,7 @@ function Title(props) {
 
 export default function PaginaInicial() {
   //const username = 'peas';
-  const [username, setUsername] = React.useState('djoa1');
+  const [username, setUsername] = React.useState('');
   const roteamento = useRouter();
 
   return (
@@ -34,9 +34,9 @@ export default function PaginaInicial() {
       <Box
         styleSheet={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          backgroundColor: appConfig.theme.colors.primary[500],
-          backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
-          backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
+          backgroundColor: appConfig.theme.colors.primary[100],
+          backgroundImage: 'url(https://wallpapercave.com/wp/wp9221921.png)',
+          backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'luminosity',
         }}
       >
         <Box
@@ -51,7 +51,7 @@ export default function PaginaInicial() {
             width: '100%', maxWidth: '700px',
             borderRadius: '5px', padding: '32px', margin: '16px',
             boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-            backgroundColor: appConfig.theme.colors.neutrals[700],
+            backgroundColor: appConfig.theme.colors.neutrals[500],
           }}
         >
           {/* Formulário */}
@@ -101,9 +101,9 @@ export default function PaginaInicial() {
               fullWidth
               buttonColors={{
                 contrastColor: appConfig.theme.colors.neutrals["000"],
-                mainColor: appConfig.theme.colors.primary[500],
-                mainColorLight: appConfig.theme.colors.primary[400],
-                mainColorStrong: appConfig.theme.colors.primary[600],
+                mainColor: appConfig.theme.colors.primary[400],
+                mainColorLight: appConfig.theme.colors.primary[800],
+                mainColorStrong: appConfig.theme.colors.primary[800],
               }}
             />
           </Box>
@@ -131,7 +131,10 @@ export default function PaginaInicial() {
                 borderRadius: '50%',
                 marginBottom: '16px',
               }}
+              alt=""
+              
               src={`https://github.com/${username}.png`}
+
             />
             <Text
               variant="body4"
