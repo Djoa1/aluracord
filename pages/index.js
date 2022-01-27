@@ -3,6 +3,7 @@ import { Box, Button, Text, TextField, Image } from '../node_modules/@skynexui/c
 import React from 'react';
 import { useRouter } from 'next/router';
 import appConfig from '../pages/config.json';
+import {  } from '@skynexui/components';
 //teste
 
 function Title(props) {
