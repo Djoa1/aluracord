@@ -1,9 +1,7 @@
-
 import { Box, Button, Text, TextField, Image } from '../node_modules/@skynexui/components';
 import React from 'react';
 import { useRouter } from 'next/router';
 import appConfig from '../pages/config.json';
-import {  } from '@skynexui/components';
 //teste
 
 function Title(props) {
@@ -24,10 +22,8 @@ function Title(props) {
 }
 
 
-
-export default function PaginaInicial() {
-  //const username = 'peas';
-  const [username, setUsername] = React.useState('');
+export default function ChatPage() {
+  const [username, setUsername] = React.useState('djoa1');
   const roteamento = useRouter();
 
   return (
@@ -60,7 +56,6 @@ export default function PaginaInicial() {
             as="form"
             onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
-              console.log('Alguém submeteu o form');
 
               roteamento.push('/chat');
               //jeito antigo
@@ -77,7 +72,8 @@ export default function PaginaInicial() {
               {appConfig.name}
             </Text>
             
-            <TextField                  
+            <TextField 
+                             
             value={username}
                   onChange ={function (event){
                     console.log("usario digitou", event.target.value);
